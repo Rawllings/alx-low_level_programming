@@ -1,10 +1,10 @@
 #include <stdio.h>
-/*
- *  Main - print alpha in lower case
- *
- *  Return: Always 0 (Success)
- */
 
+/**
+ * main - prints alpha in lower case
+ *
+ * return: 0
+ */
 int main(void)
 {
 char lc;

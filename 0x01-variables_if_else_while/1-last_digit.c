@@ -1,18 +1,30 @@
 #include <stdio.h>
-/*
- *  Main - print alpha in lower case
- *
- *  Return: Always 0 (Success)
+#include <time.h>
+#include <stdlib.h>
+/**
+ * main - print a rand num
+ * Return: 0
  */
-
 int main(void)
 {
-char lc;
+int n;
+int x;
 
-for  (lc = 'a'; lc <= 'z'; lc++)
+srand(time(0));
+n = rand() - RAND_MAX / 2;
+x = n % 10;
+
+if (x > 5)
 {
-putchar(lc);
+printf("Last digit of %d is %d and is greater than 5\n", n, x);
 }
-putchar('\n');
+else if (x == 0)
+{
+printf("Last digit of %d is %d and is 0\n", n, x);
+}
+else
+{
+printf("Last digit of %d is %d and is less than 6 and not 0\n", x, n);
+}
 return (0);
 }

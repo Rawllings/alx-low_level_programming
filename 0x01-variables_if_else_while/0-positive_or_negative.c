@@ -2,8 +2,8 @@
 #include <time.h>
 #include <stdio.h>
 
-/**
- *main - Entry point
+/*
+ *main - print a random num
  *
  * return: Always 0 (Success)
  */
